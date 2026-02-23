@@ -6,11 +6,8 @@ public class PlayerController : MonoBehaviour
     public Camera hoodCamera;
     public KeyCode switchKey;
     public string inputID;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    
+    
 
     private float speed = 20.0f;
     private float turnSpeed = 45.0f;
