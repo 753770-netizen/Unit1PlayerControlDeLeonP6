@@ -5,7 +5,6 @@ public class PlayerController : MonoBehaviour
     public Camera mainCamera;
     public Camera hoodCamera;
     public KeyCode switchKey;
-    public string inputID;
     
     
 
@@ -18,8 +17,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Axis Setup
-        horizontalInput = Input.GetAxis("Horizontal" + inputID);
-        forwardInput = Input.GetAxis("Vertical" + inputID);
+        horizontalInput = Input.GetAxis("Horizontal");
+        forwardInput = Input.GetAxis("Vertical");
         
         //Moves the vechicle forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
