@@ -29,7 +29,7 @@ public class PlayerControllerX : MonoBehaviour
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Translate(0, moveSpeed * Time.deltaTme, 0);
+            transform.Translate(0, moveSpeed * Time.deltaTime, 0);
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
